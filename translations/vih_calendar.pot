@@ -1,0 +1,91 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  vih_calendar.features.field.inc: n/a
+#  vih_calendar.features.inc: n/a
+#  vih_calendar.views_default.inc: n/a
+#  vih_calendar.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-10-09 13:32+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: vih_calendar.features.field.inc:255
+msgid "Body"
+msgstr ""
+
+#: vih_calendar.features.field.inc:256
+msgid "Dato"
+msgstr ""
+
+#: vih_calendar.features.field.inc:257
+msgid "Mere info"
+msgstr ""
+
+#: vih_calendar.features.inc:30 vih_calendar.views_default.inc:128
+msgid "Kalender"
+msgstr ""
+
+#: vih_calendar.features.inc:32
+msgid "Used for calendar items."
+msgstr ""
+
+#: vih_calendar.features.inc:34
+msgid "Titel"
+msgstr ""
+
+#: vih_calendar.views_default.inc:127
+msgid "Master"
+msgstr ""
+
+#: vih_calendar.views_default.inc:129
+msgid "mere"
+msgstr ""
+
+#: vih_calendar.views_default.inc:130
+msgid "Udfør"
+msgstr ""
+
+#: vih_calendar.views_default.inc:131
+msgid "Gendan"
+msgstr ""
+
+#: vih_calendar.views_default.inc:132
+msgid "Sortér efter"
+msgstr ""
+
+#: vih_calendar.views_default.inc:133
+msgid "Stigende"
+msgstr ""
+
+#: vih_calendar.views_default.inc:134
+msgid "Faldende"
+msgstr ""
+
+#: vih_calendar.views_default.inc:135
+msgid "Blok"
+msgstr ""
+
+#: vih_calendar.info:0
+msgid "VIH Calendar"
+msgstr ""
+
+#: vih_calendar.info:0
+msgid "Calendar information"
+msgstr ""
+
+#: vih_calendar.info:0
+msgid "VIH"
+msgstr ""
+
