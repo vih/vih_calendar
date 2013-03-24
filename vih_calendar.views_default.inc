@@ -121,7 +121,6 @@ function vih_calendar_views_default_views() {
   /* Display: Blok */
   $handler = $view->new_display('block', 'Blok', 'calendar_block');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['block_caching'] = '8';
   $translatables['vih_calendar'] = array(
     t('Master'),

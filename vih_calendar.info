@@ -20,6 +20,7 @@ features[field][] = node-vih_calendar-field_date
 features[field][] = node-vih_calendar-field_more_info
 features[node][] = vih_calendar
 features[variable][] = field_bundle_settings_node__vih_calendar
+features[variable][] = language_content_type_vih_calendar
 features[variable][] = menu_options_vih_calendar
 features[variable][] = menu_parent_vih_calendar
 features[variable][] = node_options_vih_calendar
