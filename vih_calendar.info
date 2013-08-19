@@ -2,7 +2,6 @@ name = VIH Calendar
 description = Calendar information
 core = 7.x
 package = VIH
-php = 5.2.4
 version = 7.x-0.5
 project = vih_calendar
 dependencies[] = ctools
