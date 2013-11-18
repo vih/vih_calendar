@@ -39,7 +39,17 @@ function vih_calendar_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '5',
+        ),
+        'redirect' => array(
+          'weight' => '6',
+        ),
+      ),
       'display' => array(),
     ),
   );
@@ -79,7 +89,7 @@ function vih_calendar_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_vih_calendar';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_vih_calendar'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -28,7 +28,7 @@ function vih_calendar_node_info() {
     'vih_calendar' => array(
       'name' => t('Kalender'),
       'base' => 'node_content',
-      'description' => t('Used for calendar items.'),
+      'description' => t('Used for <em>calendar</em> items for events.'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
