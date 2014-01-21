@@ -12,7 +12,7 @@ include_once('vih_calendar.features.inc');
 function vih_calendar_field_access($op, $field, $entity_type, $entity, $account) {
   if ($field['field_name'] == 'field_basic_info' && $entity_type == 'vih_calendar') {
     // Only allow admins to edit field value.
-    return user_access('administer billysbilling', $account);
+    return user_access('administer site configuration', $account);
   }
   return TRUE;
 }
