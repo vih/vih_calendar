@@ -26,7 +26,7 @@ function vih_calendar_views_api($module = NULL, $api = NULL) {
 function vih_calendar_node_info() {
   $items = array(
     'vih_calendar' => array(
-      'name' => t('Kalender'),
+      'name' => t('Calendar'),
       'base' => 'node_content',
       'description' => t('Used for <em>calendar</em> items for events.'),
       'has_title' => '1',

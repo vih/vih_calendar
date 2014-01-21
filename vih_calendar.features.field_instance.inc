@@ -56,6 +56,56 @@ function vih_calendar_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-vih_calendar-field_basic_info'
+  $field_instances['node-vih_calendar-field_basic_info'] = array(
+    'bundle' => 'vih_calendar',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_basic_info',
+    'label' => 'Basic info',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
       'weight' => 1,
     ),
   );
@@ -94,7 +144,7 @@ function vih_calendar_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_date',
-    'label' => 'Dato',
+    'label' => 'Date',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -115,7 +165,7 @@ function vih_calendar_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -174,7 +224,7 @@ function vih_calendar_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -207,7 +257,7 @@ function vih_calendar_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_more_info',
-    'label' => 'Mere info',
+    'label' => 'Link to more info',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -221,6 +271,11 @@ function vih_calendar_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'rel_remove' => 'default',
       'title' => 'optional',
       'title_maxlength' => 128,
       'title_value' => '',
@@ -233,16 +288,17 @@ function vih_calendar_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Basic info');
   t('Body');
-  t('Dato');
+  t('Date');
   t('Image');
-  t('Mere info');
+  t('Link to more info');
 
   return $field_instances;
 }

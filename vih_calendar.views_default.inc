@@ -69,7 +69,7 @@ function vih_calendar_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Felt: Indhold: Dato */
+  /* Felt: Indhold: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
@@ -90,7 +90,7 @@ function vih_calendar_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Sorteringskriterie: Indhold: Dato -  startdato (field_date) */
+  /* Sorteringskriterie: Indhold: Date -  startdato (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
@@ -109,7 +109,7 @@ function vih_calendar_views_default_views() {
     'vih_calendar' => 'vih_calendar',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filterkriterie: Indhold: Dato - slutdato (field_date:value2) */
+  /* Filterkriterie: Indhold: Date - slutdato (field_date:value2) */
   $handler->display->display_options['filters']['field_date_value2']['id'] = 'field_date_value2';
   $handler->display->display_options['filters']['field_date_value2']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value2']['field'] = 'field_date_value2';
@@ -122,6 +122,20 @@ function vih_calendar_views_default_views() {
   $handler = $view->new_display('block', 'Blok', 'calendar_block');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['block_caching'] = '8';
+
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['pane_category']['name'] = 'VIH';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $translatables['vih_calendar'] = array(
     t('Master'),
     t('Kalender'),
@@ -132,6 +146,8 @@ function vih_calendar_views_default_views() {
     t('Stigende'),
     t('Faldende'),
     t('Blok'),
+    t('Content pane'),
+    t('VIH'),
   );
   $export['vih_calendar'] = $view;
 
