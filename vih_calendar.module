@@ -5,3 +5,14 @@
  */
 
 include_once('vih_calendar.features.inc');
+
+/**
+ * Implements hook_field_access().
+ */
+function vih_calendar_field_access($op, $field, $entity_type, $entity, $account) {
+  if ($field['field_name'] == 'field_basic_info' && $entity_type == 'vih_calendar') {
+    // Only allow admins to edit field value.
+    return user_access('administer billysbilling', $account);
+  }
+  return TRUE;
+}
