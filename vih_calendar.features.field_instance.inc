@@ -22,7 +22,7 @@ function vih_calendar_field_default_field_instances() {
         'module' => 'vih_viggo',
         'settings' => array(),
         'type' => 'vih_viggo_formatter',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'featured' => array(
         'label' => 'above',
@@ -60,56 +60,6 @@ function vih_calendar_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vih_calendar-field_basic_info'
-  $field_instances['node-vih_calendar-field_basic_info'] = array(
-    'bundle' => 'vih_calendar',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_basic_info',
-    'label' => 'Basic info',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'node-vih_calendar-field_date'
   $field_instances['node-vih_calendar-field_date'] = array(
     'bundle' => 'vih_calendar',
@@ -127,7 +77,7 @@ function vih_calendar_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'featured' => array(
         'label' => 'above',
@@ -176,14 +126,14 @@ function vih_calendar_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -240,7 +190,7 @@ function vih_calendar_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -294,7 +244,6 @@ function vih_calendar_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Basic info');
   t('Body');
   t('Date');
   t('Image');
