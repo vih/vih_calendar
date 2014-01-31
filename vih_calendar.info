@@ -9,7 +9,6 @@ dependencies[] = date
 dependencies[] = features
 dependencies[] = image
 dependencies[] = link
-dependencies[] = panopoly_pages
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_content
