@@ -86,9 +86,6 @@ function vih_calendar_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
-      'featured' => array(
-        'custom_settings' => TRUE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -96,13 +93,10 @@ function vih_calendar_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '5',
         ),
         'redirect' => array(
           'weight' => '6',
-        ),
-        'metatags' => array(
-          'weight' => '7',
         ),
       ),
       'display' => array(),
