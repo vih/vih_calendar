@@ -10,7 +10,7 @@
 function vih_calendar_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-vih_calendar-body'
+  // Exported field_instance: 'node-vih_calendar-body'.
   $field_instances['node-vih_calendar-body'] = array(
     'bundle' => 'vih_calendar',
     'default_value' => NULL,
@@ -61,7 +61,7 @@ function vih_calendar_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vih_calendar-field_date'
+  // Exported field_instance: 'node-vih_calendar-field_date'.
   $field_instances['node-vih_calendar-field_date'] = array(
     'bundle' => 'vih_calendar',
     'deleted' => 0,
@@ -121,7 +121,7 @@ function vih_calendar_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vih_calendar-field_featured_image'
+  // Exported field_instance: 'node-vih_calendar-field_featured_image'.
   $field_instances['node-vih_calendar-field_featured_image'] = array(
     'bundle' => 'vih_calendar',
     'deleted' => 0,
@@ -193,7 +193,7 @@ function vih_calendar_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vih_calendar-field_more_info'
+  // Exported field_instance: 'node-vih_calendar-field_more_info'.
   $field_instances['node-vih_calendar-field_more_info'] = array(
     'bundle' => 'vih_calendar',
     'default_value' => NULL,
